@@ -4,6 +4,7 @@ It contains configurations for
 
 * vim
     - [Plugin Manager](https://github.com/junegunn/vim-plug/)
+    - A vanilla .vimrc file for getting my basic vim settings on server ready
 * terminal (oh-my-zsh)
     - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 * i3 (no longer used)
