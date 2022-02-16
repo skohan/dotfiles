@@ -1,0 +1,23 @@
+
+" plain vimrc without any plugins 
+" but with the basic settings I need
+
+set mouse=a
+set incsearch
+set tabstop=4
+set shiftwidth=4
+set expandtab
+"set relativenumber
+set number
+set clipboard=unnamed
+
+set laststatus=2
+
+set background=dark
+
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
