@@ -14,6 +14,6 @@ It contains configurations for
 * [Nordic dark theme](https://github.com/EliverLara/Nordic)
 
 
-### Distros used #### chronologically
+### Distros used (chronologically)
     - arch
     - ubuntu (currently)
