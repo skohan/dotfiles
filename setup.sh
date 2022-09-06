@@ -1,38 +1,41 @@
 #!/usr/bin/sh
 
-# Install zsh
-echo Installing required apps zsh terminator gnome-tweaks vim
+# Installing required apps zsh terminator gnome-tweaks vim
 sudo apt install zsh terminator gnome-tweaks vim
 
-# Configuring vim
-echo Installing PlugInstall for Vim
+# Installing PlugInstall for Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo Just do PlugInstall inside vim to install and activate plugins
 
 
-# Configuring zsh
-echo Installing Oh-My-Zsh
+# Configuring zsh, Installing Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Adding zsh-autosuggestions plugin to the oh-my-zsh terminal
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# also update the ~/.zshrc to add plugin
+#
+# plugins=(
+#    # other plugins...
+#     zsh-autosuggestions
+# )
 
 
 ## For ubuntu themeing
 
-# Nordic theme for applications
-echo Installing Nordic theme
+# Nordic theme for applications,  Installing Nordic theme
 git clone https://github.com/EliverLara/Nordic.git /usr/share/themes/Nordic-darker
 
-# Mac Mojav icons 
-echo  Installing McMojav icons
+# Mac Mojav icons, Installing McMojav icons
 git clone https://github.com/vinceliuice/McMojave-circle.git McMojave-circle
 cd McMojav-circle
 ./install.sh
 cd ..
-echo cleaning
+# cleaning
 rm -rf McMojav-circle
 
-
-echo YOU CAN OPEN GNOME-TWEAKS TOOL TO CHANGE THE ICONS AND THEME
+# YOU CAN OPEN GNOME-TWEAKS TOOL TO CHANGE THE ICONS AND THEME
 
 ## Creating symlinks to configuration files
 

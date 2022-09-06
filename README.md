@@ -1,5 +1,7 @@
 ## My dotfiles for linux
 
+Follow commands in `setup.sh` for installation
+
 It contains configurations for
 
 * vim
