@@ -9,6 +9,9 @@ set number
 set clipboard=unnamed
 
 call plug#begin()
+" For windows
+" call plug#begin('$HOME/vimfiles/autoload')
+" location is where the vim plug.vim file is stored
 
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
