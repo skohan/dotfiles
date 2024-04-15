@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 # Installing common tools
-sudo apt install zsh vim
+sudo apt install zsh vim git
 
 # Installing common apps (for ubuntu only)
 sudo apt install terminator gnome-tweaks 
