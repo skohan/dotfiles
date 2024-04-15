@@ -1,7 +1,10 @@
 #!/usr/bin/sh
 
-# Installing required apps zsh terminator gnome-tweaks vim
-sudo apt install zsh terminator gnome-tweaks vim
+# Installing common tools
+sudo apt install zsh vim
+
+# Installing common apps (for ubuntu only)
+sudo apt install terminator gnome-tweaks 
 
 # Installing PlugInstall for Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
